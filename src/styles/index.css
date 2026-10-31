@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0c0c0e;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(184, 141, 54, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(185, 28, 28, 0.04) 0%, transparent 50%),
+    linear-gradient(to bottom, #0c0c0e 0%, #121216 100%);
+  background-attachment: fixed;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbars for ledger tables */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121215;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2b36;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #414152;
+}
